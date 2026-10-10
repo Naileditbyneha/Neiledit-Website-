@@ -117,7 +117,7 @@ footer a{color:#fff}
 .sw img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* ---------- 3D entry animation ---------- */
-#intro{position:fixed;inset:0;z-index:100;overflow:hidden;background:radial-gradient(circle at 50% 38%,var(--bg),var(--pink) 75%);animation:introOut .8s 4.4s forwards;touch-action:none}
+#intro{position:fixed;inset:0;z-index:100;overflow:hidden;background:radial-gradient(circle at 50% 38%,var(--bg),var(--pink) 75%);animation:introOut .8s 5.8s forwards;touch-action:none}
 .noi #intro{display:none}
 #skip{position:absolute;right:16px;top:calc(14px + env(safe-area-inset-top,0px));z-index:3;border:2px solid var(--red);background:transparent;color:var(--red);border-radius:99px;padding:6px 16px;font:700 .8rem 'DM Sans',sans-serif;cursor:pointer}
 .stage{position:absolute;inset:0;perspective:1100px;perspective-origin:50% 36%}
@@ -135,6 +135,9 @@ footer a{color:#fff}
 @keyframes pop{0%{opacity:0;transform:translateY(22px) scale(.85);filter:blur(8px)}100%{opacity:1;transform:none;filter:none}}
 .sp{position:absolute;width:12px;height:12px;background:#fff;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);opacity:0;animation:tw 1.8s infinite ease-in-out}
 @keyframes tw{0%,100%{opacity:0;transform:scale(.3) rotate(0)}50%{opacity:1;transform:scale(1.2) rotate(40deg)}}
+.ioffer{position:absolute;left:0;right:0;top:calc(66% + 120px);text-align:center;padding:0 16px;animation:pop 1s 2.7s both}
+.ioffer b{display:inline-block;background:linear-gradient(90deg,#f6c344,#ffd976,#f6c344);color:#7a0a24;border-radius:99px;padding:7px 18px;font-size:.8rem;letter-spacing:.06em}
+.ioffer span{display:block;margin-top:10px;font-weight:700;color:var(--red);font-size:.95rem;line-height:1.5}
 @keyframes introOut{to{opacity:0;transform:scale(1.1);visibility:hidden}}
 #intro.out{animation:introOut .5s forwards}
 @media(prefers-reduced-motion:reduce){#intro{display:none}}
@@ -142,6 +145,23 @@ footer a{color:#fff}
 .rev .who{display:flex;gap:10px;align-items:center}.av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;flex:0 0 42px}
 .rev .meta{font-size:.78rem;color:var(--muted)}.rev .nm{font-weight:700}.rev img{width:100%;border-radius:12px;margin-top:8px;display:block}
 .rev .chip{display:inline-block;background:var(--pink);border-radius:8px;padding:3px 10px;font-size:.8rem;margin-top:4px;align-self:flex-start}.rev p{white-space:pre-line}
+
+.ostrip{display:block;text-align:center;background:linear-gradient(90deg,#f6c344,#ffd976,#f6c344);color:#7a0a24;font-weight:700;font-size:.85rem;padding:7px 10px;text-decoration:none;letter-spacing:.02em}
+.offerband{background:linear-gradient(135deg,#d6002b,#8e0f2e 70%);color:#fff;position:relative;overflow:hidden;padding:56px 18px 64px;margin-top:-1px}
+.offerband .in{max-width:1040px;margin:auto;text-align:center;position:relative}
+.offerband h2{color:#ffd76a;text-shadow:3px 3px 0 #5b0618}
+.offerband .sub2{max-width:560px;margin:12px auto 0;opacity:.95}
+.badge9{display:inline-block;margin-top:16px;background:#ffd76a;color:#7a0a24;font-weight:700;border-radius:99px;padding:6px 18px;letter-spacing:.06em;font-size:.85rem;animation:pulse 2s infinite ease-in-out}
+@keyframes pulse{50%{transform:scale(1.07)}}
+.ogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:30px}
+.ocard{background:#fff;color:#4a0b1a;border-radius:20px;padding:24px 18px;border:3px solid #ffd76a;box-shadow:0 10px 0 rgba(91,6,24,.45);display:flex;flex-direction:column;gap:6px;align-items:center}
+.ocard h3{font-size:1.35rem;color:#d6002b}
+.ocard .old{text-decoration:line-through;opacity:.6;font-size:1rem}
+.ocard .new{font:400 2.6rem/1 'Shrikhand',serif;color:#8e0f2e}
+.ocard .save{background:#fde7ee;color:#8e0f2e;font-weight:700;font-size:.8rem;border-radius:99px;padding:3px 12px}
+.ocard .btn{margin-top:8px}
+.offerband .fine{font-size:.82rem;opacity:.85;margin-top:22px}
+.offerband .dia{position:absolute;font-size:2.2rem;opacity:.9;filter:drop-shadow(0 3px 0 rgba(0,0,0,.25))}
 </style>
 </head>
 <body>
@@ -156,12 +176,14 @@ footer a{color:#fff}
 <i class="n" style="--i:5;--c:linear-gradient(135deg,#e9dcff,#b9a4d6)"></i>
 </div></div>
 <div class="ilogo"><span>Nailed It!</span><small>BY NEHA &middot; NAIL &amp; LASH STUDIO</small></div>
+<div class="ioffer"><b>🪔 NAVRATRI SPECIAL · 9 DAYS ONLY</b><span>Soft gel ₹1400<br>Builder gel &amp; Acrylic ₹1500</span></div>
 </div>
 <button class="tg" id="tg" role="switch" aria-checked="false" aria-label="Dark mode"><span>🌙 Dark</span><i></i></button>
 <div class="strip">nail art · lash extensions · kharadi, pune</div>
+<a class="ostrip" href="#offer">🪔 Navratri Special · 9 days · Extensions from ₹1400 →</a>
 <div class="logo"><b>Nailed It!</b><small>BY NEHA · STUDIO</small></div>
 <nav aria-label="Main">
-<a href="#work">Work</a><a href="#services">Services</a><a href="#press">Press-ons</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#visit">Find us</a><a href="#book">Book now</a>
+<a href="#work">Work</a><a href="#offer">🪔 Offer</a><a href="#services">Services</a><a href="#press">Press-ons</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#visit">Find us</a><a href="#book">Book now</a>
 </nav>
 
 <section id="work" style="padding-bottom:30px">
@@ -177,6 +199,16 @@ footer a{color:#fff}
 </section>
 
 <svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V20C200 60 400 0 600 20s400 40 600 0v40z"/></svg>
+
+<div class="offerband" id="offer">
+<span class="dia" style="left:10px;top:18px">🪔</span><span class="dia" style="right:12px;top:22px">🪔</span><span class="dia" style="left:6%;bottom:12px">✨</span><span class="dia" style="right:7%;bottom:14px">✨</span>
+<div class="in">
+<h2>Navratri Special</h2>
+<p class="sub2">Celebrate the nine nights with beautiful nails. Festive prices on our extensions, for 9 days only.</p>
+<span class="badge9">🪔 9 DAYS ONLY</span>
+<div class="ogrid" id="ogrid"></div>
+<p class="fine" id="ofine">Offer valid for the 9 days of Navratri. Book your slot on WhatsApp.</p>
+</div></div>
 
 <section id="services">
 <h2>Services &amp; Prices</h2>
@@ -379,6 +411,12 @@ function esc(t){return t.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
 document.getElementById("revs").innerHTML=REVS.map(function(r,i){return '<div class="rev"><div class="who"><div class="av" style="background:'+AVC[i%8]+'">'+esc(r[0].charAt(0).toUpperCase())+'</div><div><div class="nm">'+esc(r[0])+'</div><div class="meta">'+esc(r[1])+'</div></div></div><div class="st">★★★★★ <span class="meta">'+esc(r[2])+'</span></div><p>'+esc(r[3])+'</p>'+(r[4]?'<span class="chip">Service: '+esc(r[4])+'</span>':'')+(r[5]?'<img src="'+r[5]+'" alt="Photo shared by '+esc(r[0])+'" loading="lazy">':'')+'</div>'}).join("");
 document.getElementById("rl").onclick=function(){document.getElementById("revs").scrollBy({left:-300,behavior:"smooth"})};
 document.getElementById("rr").onclick=function(){document.getElementById("revs").scrollBy({left:300,behavior:"smooth"})};
+/* ---- Navratri offer: edit here (name, offer price, regular price) ---- */
+var OFFER_DATES="";
+var OFFERS=[["Soft gel extensions",1400,1499],["Builder gel extensions",1500,1699],["Acrylic extensions",1500,1799]];
+document.getElementById("ogrid").innerHTML=OFFERS.map(function(o,i){return '<div class="ocard"><h3>'+o[0]+'</h3><span class="old">₹'+o[2]+'</span><span class="new">₹'+o[1]+'</span><span class="save">Save ₹'+(o[2]-o[1])+'</span><a class="btn" target="_blank" rel="noopener" data-o="'+i+'" href="#">Book this offer</a></div>'}).join("");
+document.querySelectorAll("#ogrid a").forEach(function(a){var o=OFFERS[a.dataset.o],t="Hi Neha! I'd like to book the Navratri offer: "+o[0]+" at ₹"+o[1]+".";a.href=waURL(t);a.onclick=function(e){e.preventDefault();go(waURL(t))}});
+if(OFFER_DATES)document.getElementById("ofine").textContent="Valid "+OFFER_DATES+". Book your slot on WhatsApp.";
 var root=document.documentElement,tg=document.getElementById("tg");
 function setTheme(t,save){root.setAttribute("data-theme",t);root.style.colorScheme=t;tg.setAttribute("aria-checked",t==="dark");if(save){try{localStorage.setItem("neha-theme",t)}catch(e){}}}
 var st="light";try{st=localStorage.getItem("neha-theme")||"light"}catch(e){}
